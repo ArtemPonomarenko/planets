@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | Planets fact site</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;500&family=Spartan:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/8805e0edcd.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./script.js"></script>
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./tablet_media.css">
+  <link rel="stylesheet" href="./desktop_media.css">
+</head>
+
+<body>
+  <div class="main" role="main">
+    <header class="header">
+      <div class="header--title"> the planets</div>
+      <div class="hamburger" id="hamburger"> </div>
+      <div class="menu" id="main-menu">
+        <span class="menu--item menu--item__mercury" id="mercury-link">mercury</span>
+        <span class="menu--item menu--item__venus" id="venus-link">venus</span>
+        <span class="menu--item menu--item__earth" id="earth-link">earth</span>
+        <span class="menu--item menu--item__mars" id="mars-link">mars</span>
+        <span class="menu--item menu--item__jupiter" id="jupiter-link">jupiter</span>
+        <span class="menu--item menu--item__saturn" id="saturn-link">saturn</span>
+        <span class="menu--item menu--item__uranus" id="uranus-link">uranus</span>
+        <span class="menu--item menu--item__neptune" id="neptune-link">neptune</span>
+      </div>
+    </header>
+    <article class="planet-section">
+      <div class="planet-images">
+        <img src="./assets/planet-earth.svg" alt="planet image" class="planet-image" id="planet-image">
+        <img src="./assets/geology-earth.png" alt="geology image" class="geology-image" id="geology-image">
+      </div>
+      <div class="planet-article">
+        <h1 class="planet-title" id="planet-title-display"></h1>
+        <div class="planet-description" id="planet-description-display"></div>
+        <div class="wiki-source">
+          Source :
+          <a href="/" target="_blank" class="wikipedia-link" id="wikipedia-link">Wikipedia</a>
+        </div>
+      </div>
+      <div class="planet-menu">
+        <div class="planet-menu--item planet-menu--item__active" id="overview-link"><span
+            class="little-number">01</span>overview</div>
+        <div class="planet-menu--item" id="structure-link"><span class="little-number">02</span><span
+            class="additional-word">internal&nbsp</span>structure</div>
+        <div class="planet-menu--item" id="geology-link"><span class="little-number">03</span><span
+            class="additional-word">surface&nbsp</span>geology</div>
+      </div>
+    </article>
+    <div class="facts">
+      <div class="fact">
+        <span class="fact--title">rotation time</span>
+        <div class="fact--info" id="rotation-display"></div>
+      </div>
+      <div class="fact">
+        <span class="fact--title">revolution time</span>
+        <div class="fact--info" id="revolution-display"></div>
+      </div>
+      <div class="fact">
+        <span class="fact--title">radius</span>
+        <div class="fact--info" id="radius-display"></div>
+      </div>
+      <div class="fact">
+        <span class="fact--title">average temp.</span>
+        <div class="fact--info" id="temperature-display"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
