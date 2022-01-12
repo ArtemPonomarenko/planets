@@ -172,12 +172,12 @@ $(document).ready(function () {
     if (width < 700) {
       if (main_menu.hasClass("active")) {
         main_menu.slideToggle();
-        hamburger_btn.css("opacity", "0.5");
+        hamburger_btn.css("opacity", "1");
         main_menu.removeClass("active");
       } else {
         main_menu.slideToggle();
         main_menu.css("display", "flex");
-        hamburger_btn.css("opacity", "1");
+        hamburger_btn.css("opacity", "0.5");
         main_menu.addClass("active");
       }
     }
