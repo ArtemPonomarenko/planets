@@ -95,18 +95,6 @@ $(document).ready(function () {
 
   // Update the page when choose a planet
   function updatePage(planet) {
-    //Remove previous class name
-    $("body").removeClass();
-    //Add class name to the body, in order to change the color scheme
-    $("body").addClass(`${planet.name}`.toLowerCase());
-
-    //Add styling to the active planet link
-    let linked_planet = `.menu--item__${planet.name}`.toLowerCase();
-    $(linked_planet)
-      .addClass("menu--item__active")
-      .siblings()
-      .removeClass("menu--item__active");
-
     //Update displays
 
     //When changing planets the little menu stays on the same link
@@ -125,6 +113,18 @@ $(document).ready(function () {
     revolution_display.text(`${planet.revolution}`);
     radius_display.text(`${planet.radius}`);
     temperature_display.text(`${planet.temperature}`);
+
+    //Remove previous class name
+    $("body").removeClass();
+    //Add class name to the body, in order to change the color scheme
+    $("body").addClass(`${planet.name}`.toLowerCase());
+
+    //Add styling to the active planet link
+    let linked_planet = `.menu--item__${planet.name}`.toLowerCase();
+    $(linked_planet)
+      .addClass("menu--item__active")
+      .siblings()
+      .removeClass("menu--item__active");
   }
 
   // Update info when choosing different label
@@ -172,12 +172,12 @@ $(document).ready(function () {
     if (width < 700) {
       if (main_menu.hasClass("active")) {
         main_menu.slideToggle();
-        hamburger_btn.css("opacity", "1");
+        hamburger_btn.css("opacity", "0.5");
         main_menu.removeClass("active");
       } else {
         main_menu.slideToggle();
         main_menu.css("display", "flex");
-        hamburger_btn.css("opacity", "0.5");
+        hamburger_btn.css("opacity", "1");
         main_menu.addClass("active");
       }
     }
